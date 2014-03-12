@@ -5,8 +5,8 @@ module GemRelease
     include GemRelease::Helpers
 
     VERSION_PATTERN = /(VERSION\s*=\s*(?:"|'))((?:(?!"|').)*)("|')/
-    NUMBER_PATTERN  = /(\d+)\.(\d+)\.(\d+)(.*)/
-    PRERELEASE_NUMBER_PATTERN  = /(\d+)\.(\d+)\.(\d+)\.(.*)(\d+)/
+    NUMBER_PATTERN  = /\d\.(\d+)\.(\d+)\.(\d+)(.*)/
+    PRERELEASE_NUMBER_PATTERN  = /\d\.(\d+)\.(\d+)\.(\d+)\.(.*)(\d+)/
 
     attr_reader :target
 
